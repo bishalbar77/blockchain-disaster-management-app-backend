@@ -25,8 +25,6 @@ class TransactionController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'trasaction_id' => 'required',
-            'sender_account' => 'required',
-            'receiver_account' => 'required',
         ]);
 
         if ($validator->fails()) {
